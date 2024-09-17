@@ -1,0 +1,121 @@
+.banner__full--wrapper {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.banner__full--img--container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#banner__full--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner__full--info--container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: var(--accent-blue);
+  background: var(--bg-opac);
+  white-space: pre;
+  overflow: hidden;
+}
+
+.banner__full--title {
+  font-size: 3rem;
+  color: var(--accent-blue);
+  padding: 30px 15px 15px 15px !important;
+}
+
+.banner__img--inner--wrapper {
+  width: 100%;
+  background: rgba(36, 40, 103, 0.9);
+  padding: 5px;
+}
+
+.banner__img--inner--wrapper img {
+  width: 125px;
+  height: 40px;
+  object-fit: cover;
+  object-position: 0 -3px;
+}
+
+/* banner standard */
+
+.standard__banner--wrapper {
+  position: relative;
+  max-width: 1200px;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 25px;
+}
+
+#sb__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sb__content--wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 50%;
+  top: 0;
+  width: 90%;
+  height: 100%;
+  transform: translate(-50%);
+  text-wrap: wrap;
+}
+
+.sb__content--wrapper h6 {
+  font-size: 2rem;
+  color: var(--bg);
+  background: rgba(36, 40, 103, 0.9);
+  padding: 12px !important;
+  padding-bottom: 0 !important;
+  text-transform: capitalize;
+}
+
+.sb__text--container {
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+}
+
+.sb__content--wrapper h4 {
+  padding: 12px !important;
+  color: var(--bg);
+}
+.sb__content--wrapper p {
+  padding: 12px !important;
+  padding-top: 0 !important;
+}
+
+.sb__content--wrapper button {
+  background: var(--bg);
+}
+.sb__content--wrapper button p {
+  background: initial !important;
+  padding: 0 !important;
+  color: var(--accent-blue);
+  text-transform: uppercase;
+  font-weight: 500;
+}

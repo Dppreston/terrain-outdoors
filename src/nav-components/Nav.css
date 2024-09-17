@@ -1,0 +1,242 @@
+.navbar__wrapper {
+  position: sticky;
+  top: 0;
+  height: 150px;
+  background: var(--accent-blue);
+  box-shadow: var(--box-shadow);
+  z-index: 2;
+}
+
+.nav__inner {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 100%;
+  background: var(--accent-blue);
+}
+
+.nav__upper {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 70%;
+  background: var(--accent-blue);
+  margin: var(--standard--margin);
+}
+
+.nav__lower {
+  position: relative;
+  height: 30%;
+  width: 100%;
+  background: var(--bg);
+}
+.nav__logo--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: auto;
+  background: var(--accent-blue);
+  cursor: pointer;
+}
+
+#nav__logo {
+  width: auto;
+  height: 60%;
+  object-fit: cover;
+  background: var(--accent-blue);
+}
+
+.nav__search--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+  background: var(--accent-blue);
+}
+
+.nav__account--container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: var(--standard--gap);
+  align-items: center;
+  width: 175px;
+  height: 100%;
+  background: initial;
+}
+
+.nav__options--container {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  background: initial;
+  margin: var(--standard--margin);
+}
+
+.nav__option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  padding: 10px;
+  transition: var(--bg-transition);
+}
+
+.nav__option:hover {
+  background: var(--accent-blue) !important;
+  color: var(--bg);
+}
+
+.preview__dropdown--wrapper {
+  animation: var(--dropdown);
+  transform-origin: top;
+  position: absolute;
+  top: 80%;
+  right: 20%;
+  width: auto;
+  height: auto;
+  border-radius: var(--br);
+  background: var(--bg);
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  z-index: 2;
+}
+
+/* cart preview */
+
+.preview__dropdown--wrapper > .cart__preview--wrapper {
+  padding: 10px;
+  width: 325px;
+  max-height: 400px;
+}
+
+.preview__login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  height: auto;
+  text-align: center;
+  gap: 15px;
+  /* white-space: nowrap; */
+}
+
+.preview__login h5 span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.preview__login > button {
+  background: var(--accent-blue);
+  cursor: pointer;
+}
+
+.preview__login > button p {
+  color: var(--bg);
+}
+
+.nav__dropdown--wrapper {
+  position: absolute;
+  transform-origin: top;
+  height: auto;
+  width: 100%;
+  background: var(--bg);
+  color: var(--bg);
+  box-shadow: var(--box-shadow);
+  z-index: 1;
+}
+
+.nav__dropdown--inner {
+  display: flex;
+  height: 100%;
+  text-transform: capitalize;
+  height: 300px;
+  max-height: 300px;
+}
+
+.nav__block {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  overflow: hidden;
+  border-right: 2px solid white;
+  transition: opacity 0.2s ease;
+  max-width: 250px;
+}
+
+.nav__block:hover {
+  opacity: 0.8;
+}
+
+.nav__block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav__block h6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-opac);
+  position: absolute;
+  width: 100%;
+  flex-wrap: wrap;
+  height: 60px;
+  left: 50%;
+  padding: 10px 5px 5px 5px !important;
+  bottom: 0;
+  transform: translate(-50%);
+  text-transform: capitalize;
+  font-size: 1.75rem;
+  z-index: 2 !important;
+}
+
+.nav__block:last-child {
+  margin-left: auto;
+}
+
+/* footer */
+
+.footer__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-top: 25px;
+  background: var(--accent-blue);
+  border-top: var(--border);
+  border-width: 2px;
+  /* box-shadow: var(--box-shadow); */
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer__inner img {
+  width: 75px;
+  height: auto;
+}
+
+.footer__inner span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.footer__inner span > * {
+  color: var(--bg);
+  font-weight: 100;
+}

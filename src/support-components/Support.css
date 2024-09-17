@@ -1,0 +1,157 @@
+.breadcrumbs {
+  display: flex;
+}
+
+.breadcrumbs h5 {
+  font-size: 13px !important;
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 0 5px 0 5px;
+  text-transform: capitalize;
+}
+
+.breadcrumbs i {
+  font-size: 13px !important;
+}
+
+.product__sale {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  left: 15px;
+  top: 15px;
+  background: var(--accent-blue) !important;
+  width: 50px;
+}
+
+.product__sale h6 {
+  font-size: 1rem;
+  color: var(--bg);
+}
+
+/* quantity */
+
+.quantity__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  gap: 10px;
+}
+
+.quantity__wrapper h1 {
+  text-align: center;
+  width: 30px;
+}
+
+.quantity__wrapper button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg);
+  padding: 10px !important;
+  background: var(--accent-blue);
+  cursor: pointer;
+}
+
+/* enlarged image wrapper */
+
+.ei__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 25px;
+}
+
+.ei__img--wrapper {
+  width: 800px;
+  height: 800px;
+}
+
+#ei__img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.ei__wrapper button {
+  width: 30px;
+  height: 30px;
+  background: var(--bg);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.blur__wrapper > .button__main {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.25rem !important;
+  color: var(--bg);
+}
+
+/* loader */
+
+.loader__wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader__blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: blur(2px);
+  background: var(--bg-opac);
+  z-index: 1;
+}
+
+#loader {
+  width: 50px;
+  height: 50px;
+  color: white;
+  filter: blur(0) !important;
+  z-index: 2;
+}
+
+/* password check */
+
+.password__check--wrapper {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  text-align: left;
+  gap: 5px;
+  flex-wrap: wrap;
+  width: 525px;
+  max-width: inherit;
+  height: 50px;
+  text-transform: capitalize;
+  padding: 5px;
+}
+
+.password__check--wrapper p {
+  display: flex;
+  gap: 7px;
+  font-size: 10.5px !important;
+}
+
+.wishlist__button--wrapper {
+  margin-left: auto;
+}
+
+.wishlist__button--wrapper button {
+  font-size: 20px;
+}
+
+.wishlist__button--wrapper button:hover {
+  text-decoration: none;
+}

@@ -1,0 +1,141 @@
+@import url(../App.css);
+
+.searchbar__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 100%;
+  background: inherit;
+  max-width: 800px;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background: var(--bg);
+  border-radius: var(--button-br);
+  padding: var(--standard--padding);
+}
+
+.searchbar__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.1;
+}
+
+.searchbar__right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+}
+
+.search__dropdown--wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  top: 90%;
+  max-height: 500px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: var(--br);
+  background: var(--bg);
+  z-index: 2;
+  padding: 10px;
+  transform-origin: left;
+}
+
+.sd__upper {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  text-transform: capitalize;
+  background: var(--accent-blue);
+  padding: 10px;
+}
+
+.sd__upper > * {
+  color: var(--bg);
+}
+
+.sd__upper span > * {
+  color: var(--bg);
+}
+
+.sd__lower {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  overflow-y: auto;
+  max-height: 500px;
+  padding: 5px;
+}
+
+.search__tile {
+  display: flex;
+  gap: 15px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: var(--br);
+  transition: var(--bg-transition);
+  box-shadow: var(--box-shadow);
+}
+
+.search__tile:hover {
+  background: var(--blur-bg);
+}
+
+#st__img {
+  width: 50px;
+  height: 100%;
+  object-fit: contain;
+}
+
+.sd__info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+}
+
+.sd__info--top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+  gap: 15px;
+  width: 100%;
+}
+
+.sd__info--top > h4 {
+  text-align: left;
+  flex: 0.7;
+  white-space: pre;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.st__price--container {
+  display: flex;
+  gap: 5px;
+}
+
+.search__load--ref {
+  width: 100%;
+  height: 5px;
+  background: red;
+}
+
+.mobile__search--right {
+  position: absolute;
+  right: 15px;
+  color: black !important;
+}

@@ -1,0 +1,115 @@
+.input__main--label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.label__top {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 200;
+}
+
+.input__main--label span {
+  display: flex;
+  color: maroon;
+}
+
+.input__main {
+  width: auto;
+  height: 30px;
+  font-size: 1rem;
+  padding: 5px;
+  font-size: 13px;
+}
+
+.input__main:focus {
+  outline: none;
+}
+.input__other {
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border: none;
+  font-size: 1rem;
+}
+
+.input__other:focus {
+  outline: none;
+}
+
+/* text area */
+
+.text__area--main {
+  resize: none !important;
+  height: 100%;
+}
+
+/* nav account buttons */
+
+.button__main {
+  cursor: pointer !important;
+}
+
+.nav__account--container > button {
+  background: initial;
+  width: 50px !important;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--bg);
+  transition: var(--bg-transition);
+}
+.nav__account--container > button:hover {
+  background: var(--bg);
+  color: var(--accent-blue);
+}
+
+/* input counter */
+
+.input__counter {
+  margin-left: auto;
+}
+
+/* dropdown */
+
+#dropdown__select--btn {
+  position: relative;
+  text-align: center;
+  height: 30px;
+  width: auto;
+  padding: 5px;
+  font-size: 1rem;
+  background: white;
+  border: var(--border);
+  overflow: all;
+  cursor: pointer;
+}
+
+.order__dropdown--wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: -1px;
+  top: 100%;
+  width: 100%;
+  height: 125px !important;
+  background: white;
+  border: var(--border);
+  border-top: none;
+  z-index: 2;
+  overflow-y: auto;
+}
+
+.order__dropdown--wrapper button {
+  padding: 5px !important;
+  width: 100% !important;
+  margin: 0 !important;
+  background: initial !important;
+  transition: var(--bg-transition);
+  cursor: pointer;
+}
+.order__dropdown--wrapper button:hover {
+  background: var(--blur-bg) !important;
+}

@@ -1,0 +1,129 @@
+.side__widget--wrapper {
+  animation: loginWidget 0.5s ease forwards;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 325px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background: var(--bg);
+  transform: translate(500px, 0);
+  box-shadow: var(--box-shadow-black);
+  padding: 0px 15px 0 15px;
+}
+
+.sw__login--wrapper {
+  padding-top: 15px;
+}
+
+.login__widget {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  gap: 10px;
+}
+
+.login__widget button {
+  border: var(--border);
+  width: 100%;
+  cursor: pointer;
+  background-color: var(--accent-blue);
+}
+
+.login__widget button:first-of-type {
+  margin-top: 10px;
+}
+
+.login__widget button p {
+  color: var(--bg);
+}
+
+/* Account component */
+
+.account__component--wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--standard--gap);
+  align-items: flex-start;
+  width: 100%;
+  flex: auto;
+  height: 100%;
+  padding: 15px;
+}
+
+.ac__upper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: var(--border);
+}
+
+.ac__upper button {
+  color: var(--bg);
+  background-color: var(--accent-blue);
+}
+
+.account__component--wrapper h6 {
+  width: 100%;
+  font-size: 2rem;
+}
+
+.ac__nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  gap: 10px;
+}
+
+.ac__nav--option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 !important;
+  width: 100px;
+  padding: 10px;
+  gap: 10px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.ac__nav--option i {
+  font-size: 1.5em;
+}
+
+.ac__content {
+  height: 100%;
+  flex: auto;
+  width: 100%;
+}
+
+/* wishlist */
+
+.wishlist__wrapper {
+  width: auto;
+  height: 100%;
+}
+
+.wl__upper {
+  padding: 15px;
+  background: var(--accent-blue);
+  color: var(--bg);
+}
+
+.wl__lower {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 80vh;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.wl__lower > .cart__item {
+  margin-top: 10px;
+}
