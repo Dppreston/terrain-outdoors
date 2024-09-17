@@ -104,7 +104,7 @@ export type SignupProps = {
 
 const token: string | null = localStorage.getItem("token");
 
-axios.defaults.baseURL = "http://localhost:8080";
+axios.defaults.baseURL = "https://terrain-outdoors.onrender.com";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState<GlobalContext | boolean>(false);
