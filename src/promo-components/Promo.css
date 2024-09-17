@@ -43,6 +43,9 @@
 .promo__grid--lower > .product__tile {
   height: 100%;
   min-width: 275px;
-
   background: var(--bg);
+}
+
+.promo__grid--lower > .product__tile > .product__tile--img--container {
+  min-height: 300px !important;
 }
