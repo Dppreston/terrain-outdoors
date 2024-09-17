@@ -1,5 +1,4 @@
 import { NavigationProps } from "../App";
-import { statesArray } from "../checkout-components/orderStatic";
 
 export const inputData: {
   id: number;

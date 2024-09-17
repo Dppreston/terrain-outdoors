@@ -1,7 +1,6 @@
-import { useContext, useEffect, useRef } from "react";
+import { useContext, useRef } from "react";
 import { GlobalContext, UserContext } from "../App";
-import { buttonData } from "../functional-components/FuncStatic";
-import Button from "../functional-components/Button";
+
 import CartPreview from "../account-components/CartPreview";
 
 type PreviewDropdownProps = {

@@ -5,7 +5,7 @@ type GridProps = {
   sub?: string | undefined;
 };
 
-const CategoryGrid = ({ category, sub }: GridProps) => {
+const CategoryGrid = ({ category }: GridProps) => {
   return (
     <>
       <div className="category__grid--wrapper">

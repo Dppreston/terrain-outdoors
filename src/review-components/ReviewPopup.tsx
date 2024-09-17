@@ -37,7 +37,7 @@ let summary: string = "";
 let review: string = "";
 
 const ReviewPopup = ({ props }: ReviewPopupProps) => {
-  const { setReviewPopupProps, userData, setLoading, loading, mediaTwo } =
+  const { setReviewPopupProps, userData, setLoading, loading } =
     useContext<GlobalContext>(UserContext);
   const [updatedRating, setUpdatedRating] = useState<number>(
     props!?.selectedRating

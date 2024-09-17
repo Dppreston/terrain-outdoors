@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import { subOptions } from "./NavStatic";
 
 type NavDropdownProps = {

@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-import Button from "../functional-components/Button";
 import { NavigationProps } from "../App";
 
 type BannerFullProps = {

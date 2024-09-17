@@ -4,7 +4,7 @@ import CartPreview from "./CartPreview";
 import Button from "../functional-components/Button";
 import { buttonData } from "../functional-components/FuncStatic";
 import Wishlist from "./WishlistSide";
-import Account from "./AccountSide";
+
 let acNavOptions: {
   id: number;
   title: string;
@@ -94,9 +94,7 @@ const AccountComponent = () => {
             <CartPreview />
           ) : selected === 2 ? (
             <Wishlist />
-          ) : (
-            <Account />
-          )}
+          ) : null}
         </div>
       </div>
     </>

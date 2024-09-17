@@ -1,4 +1,3 @@
-import { NavigationProps } from "../App";
 import logo from "../assets/terrain-new.png";
 
 //home banner images

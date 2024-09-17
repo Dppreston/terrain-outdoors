@@ -1,7 +1,7 @@
 import Input from "../functional-components/Input";
 import { inputData } from "../functional-components/FuncStatic";
 import axios from "axios";
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import SearchDropdown from "./SearchDropdown";
 import { GlobalContext, UserContext } from "../App";
 

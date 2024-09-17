@@ -1,9 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { buttonData } from "../functional-components/FuncStatic";
 import Button from "../functional-components/Button";
 import { CheckOutProps } from "../landing-pages/Checkout";
-
-let shippingBase;
 
 const shippingOptions: { id: number; title: string; price: number }[] = [
   {
@@ -25,7 +23,6 @@ const shippingOptions: { id: number; title: string; price: number }[] = [
 
 const CShipping = ({ address, receive }: CheckOutProps) => {
   const [selected, setSelected] = useState<number>(0);
-  address != undefined ? (shippingBase = address[0][0] + address[0][1]) : 0;
 
   const handleNext = () => {
     const option = shippingOptions.find((el) => el.id === selected);

@@ -13,7 +13,7 @@ type TAProps = {
   multipleValues?: (value: { label: string; value: string }) => void;
 };
 
-const TextArea = ({ taProps, multipleValues, func }: TAProps) => {
+const TextArea = ({ taProps, multipleValues }: TAProps) => {
   const [count, setCount] = useState<number>(0);
   return (
     <>

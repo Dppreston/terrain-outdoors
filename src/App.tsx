@@ -13,20 +13,20 @@ import "./review-components/Review.css";
 import "./account-components/Cart.css";
 import "./checkout-components/Checkout.css";
 import "./promo-components/Promo.css";
-import { BrowserRouter, Routes, Route, useFetcher } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./landing-pages/Home";
 import Navbar from "./nav-components/Navbar";
 import React, { useEffect, useMemo, useState } from "react";
 import Products from "./landing-pages/Products";
 import LoginWidget from "./account-components/SideWidget";
-import Account from "./landing-pages/Account";
+
 import axios from "axios";
 import ReviewPopup from "./review-components/ReviewPopup";
 import EnlargedImg from "./support-components/EnlargedImg";
 import CreateAccount from "./landing-pages/CreateAccount";
 import Login from "./landing-pages/Login";
 import Checkout from "./landing-pages/Checkout";
-import { subOptions } from "./nav-components/NavStatic";
+
 import Footer from "./nav-components/Footer";
 export const UserContext: any = React.createContext(null);
 
@@ -117,7 +117,7 @@ function App() {
   const [loading, setLoading] = useState<number | GlobalContext>(0);
   const [userData, setUserData] = useState<GlobalContext>();
   const [cartPopup, setCartPopup] = useState<boolean | GlobalContext>(false);
-  const [navLink, setNavLink] = useState<string | GlobalContext>();
+  const [navLink] = useState<string | GlobalContext>();
   const [mediaOne, setMediaOne] = useState<boolean | GlobalContext>();
   const [mediaTwo, setMediaTwo] = useState<boolean | GlobalContext>();
 
@@ -404,7 +404,7 @@ function App() {
                   path="/products/:category?/:sub?/:product?"
                   element={<Products />}
                 />
-                <Route path="/account" element={<Account />} />
+
                 <Route path="/create-account" element={<CreateAccount />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/checkout" element={<Checkout />} />

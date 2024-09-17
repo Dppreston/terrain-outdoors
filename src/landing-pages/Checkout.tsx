@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import { GlobalContext, UserContext } from "../App";
 import CartPreview from "../account-components/CartPreview";
 import CInformation from "../checkout-components/CInformation";
