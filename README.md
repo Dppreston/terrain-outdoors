@@ -1,31 +1,28 @@
-# Terrain Outdoors
+<h2>Terrain Outdoors</h2>
+<p>Terrain Outdoors is an e-commerce project focused on fishing products. This project showcases my ability to effectively demonstrate both front-end and back-end skills in an e-commerce setting.</p>
 
-
-<h2>Terrain outdoors is a e-commerce project focused on fishing products</h2>
-<p>This is a project focused on displaying my ability to effectively demonstrate my front and back end skills in an e-commerce setting</p>
-
-<h2>Front-end</h2>
+<h2>Front-End Technologies</h2>
 <ul>
-  <li>Typescript</li>
+  <li>TypeScript</li>
   <li>React</li>
-  <li>Custom react hooks and functions used throughout the project</li>
+  <li>Custom React hooks and functions used throughout the project</li>
 </ul>
 
-<h2>Back-end</h2>
+<h2>Back-End Technologies</h2>
 <ul>
-  <li>Typescript</li>
+  <li>TypeScript</li>
   <li>Node.js</li>
-  <li>MongoDB for database and data mangement</li>
+  <li>MongoDB for database management</li>
   <li>Mongoose</li>
   <li>Express</li>
 </ul>
 
 <h2>Project Features</h2>
 <ul>
-  <li>Dynamic product promo content based on top selling, top rated and sale products </li>
+  <li>Dynamic product promotion content based on top-selling, top-rated, and sale products</li>
   <li>Full cart UI and checkout process for both account holders and guests</li>
   <li>Product sorting and filtering using multiple queries and complex conditions</li>
-  <li>Account creation and login ability</li>
-  <li>Wishlists</li>
-  <li>Review products, view review summaries and filter them to your liking</li>
+  <li>Account creation and login capabilities</li>
+  <li>Wishlists for saving products</li>
+  <li>Product reviews with summaries and filtering options</li>
 </ul>
